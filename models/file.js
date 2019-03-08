@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+var CryptoJS = require("crypto-js")
 var Schema = mongoose.Schema;
 
 var FileSchema = new Schema({
