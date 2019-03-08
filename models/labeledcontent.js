@@ -11,6 +11,8 @@ var LabeledContentSchema = new Schema({
     default: Date.now
   },
   type: String,
+  //file_id: String,
+  //content_id: String
   file_id: [File.schema],
   content_id: [Content.schema],
   content_part: String,

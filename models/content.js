@@ -1,13 +1,14 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const File = require("../models/file");
 var Schema = mongoose.Schema;
 
 var ContentSchema = new Schema({
-    content: String,
-    file_id: [File.schema]
+  //_id: String hash of content field
+  content: String,
+  file_id: [File.schema]
 });
 
-module.exports = mongoose.model('Content', ContentSchema);
+module.exports = mongoose.model("Content", ContentSchema);
 
 // ContentSchema.pre('save', function(next) {
 
