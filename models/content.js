@@ -1,20 +1,9 @@
-<<<<<<< HEAD
-const mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-
-var ContentSchema = new Schema({
-    content: String,
-    file_id: String
-=======
 const mongoose = require("mongoose");
-const File = require("../models/file");
 var Schema = mongoose.Schema;
 
 var ContentSchema = new Schema({
-  //_id: String hash of content field
   content: String,
-  file_id: [File.schema]
->>>>>>> 6f1cb8ecc5c5a4db990774d71927cf615255972a
+  file_id: String
 });
 
 module.exports = mongoose.model("Content", ContentSchema);
