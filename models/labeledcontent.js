@@ -1,6 +1,4 @@
 const mongoose = require("mongoose");
-const File = require("../models/file");
-const Content = require("../models/content");
 var Schema = mongoose.Schema;
 
 var LabeledContentSchema = new Schema({
@@ -11,8 +9,8 @@ var LabeledContentSchema = new Schema({
     default: Date.now
   },
   type: String,
-  file_id: [File.schema],
-  content_id: [Content.schema],
+  file_id: String,
+  content_id: String,
   content_part: String,
   content_index: Number
 });

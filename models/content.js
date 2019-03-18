@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
-const File = require("../models/file");
 var Schema = mongoose.Schema;
 
 var ContentSchema = new Schema({
     content: String,
-    file_id: [File.schema]
+    file_id: String
 });
 
 module.exports = mongoose.model('Content', ContentSchema);
