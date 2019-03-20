@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var LabelSchema = new Schema({
-  label: [String],
+  label: String,
   type: String,
   file_id: String
 });

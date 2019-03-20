@@ -11,8 +11,8 @@ const app = express();
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  "mongodb://localhost:27017/labeler",
-  //"mongodb://admin123:admin123@ds163044.mlab.com:63044/labeler",
+  //"mongodb://localhost:27017/labeler",
+  "mongodb://admin123:admin123@ds163044.mlab.com:63044/labeler",
   { useNewUrlParser: true },
   err => {
     {
