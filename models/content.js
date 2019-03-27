@@ -2,6 +2,10 @@ const mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var ContentSchema = new Schema({
+  _id: {
+    type: String,
+    required: true
+  },
   content: String,
   file_id: String
 });

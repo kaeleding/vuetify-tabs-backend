@@ -4,6 +4,10 @@ var Schema = mongoose.Schema;
 
 var FileSchema = new Schema({
   //_id: String hash of name field
+  _id: {
+    type: String,
+    required: true
+  },
   name: String,
   description: String,
   uploader: String,
